@@ -10,7 +10,7 @@ type TodoListProps = {
 export const TodoList: React.FC<TodoListProps> = ({todos, onToggle, onRemove}) => {
 
   if (todos.length === 0) {
-    return <p className="center">Пока задач нет 😃</p>
+    return <p className="center">Пока задач нет <span role="img" aria-label="grinniing face">😃</span></p>
   }
 
   const removeHandler = (event: React.MouseEvent, id: number) => {
